@@ -1,0 +1,92 @@
+/*here is the style of the meeting minutes*/
+* {
+    background-color: hsla(76, 12%, 62%, 0.955);
+}
+
+h1{
+    background-color:rgb(211, 172, 30);
+    position: relative;
+    color: darkblue;
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Rowdies', cursive;
+    margin-top: 1em;
+    padding-bottom: 4rem;
+    border-style:dotted;
+    border-color:#03f50f;
+    border-width:3%;
+    border-radius:5px;
+    height:20pt;
+    width:10in
+}
+
+h2 {
+    margin:10px,10px,10px,10px;
+    padding: 10px,10px,10px,10px;
+    position: absolute;
+}
+
+.john{
+    position: static;
+    max-width: 100pt;
+    max-height: 10pt;
+    margin:auto
+}
+
+#something{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+h1:hover{
+    color:red;
+}
+
+h1:active{
+    color:aqua
+}
+
+h2[class="hello"]{
+    background-color: #03f50f;
+}
+
+h3, h4{
+    color: #1b0ca2;
+}
+
+ul li {
+    color:firebrick
+}
+
+ol>li {
+    color:thistle
+}
+
+h3~h4{
+    color: cornflowerblue
+}
+
+h2 + h1{
+    font-weight: bold;
+}
+
+li.john {
+    font-weight: bold;
+}
+
+.olist{
+    display: grid;
+    grid-area: auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+}
+
+@media screen and (min-width: 1200px) {
+    *{
+        background-color: hsla(75, 78%, 42%, 0.955);
+    }
+}
